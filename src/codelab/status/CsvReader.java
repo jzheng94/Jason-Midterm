@@ -14,7 +14,7 @@ public class CsvReader {
          You need to find the average score of the class.
          */
 
-        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster-file-01-02-2022.csv";
+        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster-file-05-22-2022.csv";
         String line = "";
         String cvsSplitBy = ",";
         BufferedReader br = null;
