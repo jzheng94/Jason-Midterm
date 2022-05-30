@@ -188,22 +188,20 @@ Why is String Immutable in Java?
 A. Because Strings are cached in the String pool.
 
 What is constructor chaining in Java?
-A.
+A. Constructor chaining is the process of calling one constructor from another constructor with respect to the current object.
 
 The difference between Serial and Parallel Garbage Collector?
-A.
+A. Serial is single thread while parallel uses multiple threads for garbage collection
 
 What is JIT stands for?
-A.
-
-Explain Java Heap space and Garbage collection?
-A.
+A. Just-In-Time
 
 Can you guarantee the garbage collection process?
-A.
+A. No, it is possible to use up memory faster than the garbage is collected.
 
 What is the difference between stack and heap in Java?
-A.
+A. Stack memory is used for static memory and execution of a thread. Heap is used for dynamic memory allocation
+of java objects and JRE classes during runtime.
 
 What is reflection in java and why is it useful?
 A.
