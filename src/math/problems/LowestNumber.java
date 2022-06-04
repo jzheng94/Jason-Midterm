@@ -29,6 +29,19 @@ public class LowestNumber {
 		for(String st:lowestValue){
 			System.out.println(st);
 		}
+		System.out.println("The smallest number is: "+getLowestNumber(array, array.length));
 	}
-
+	public static int getLowestNumber(int[] array, int total){
+		int temp;
+		for(int i = 0; i < total; i++){
+			for(int a = i + 1; a < total; a++){
+				if(array[i] > array[a]){
+					temp = array[i];
+					array[i] = array[a];
+					array[a] = temp;
+				}
+			}
+		}
+		return array[0];
+	}
 }
