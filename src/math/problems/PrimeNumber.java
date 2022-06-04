@@ -1,4 +1,8 @@
 package math.problems;
+import databases.ConnectToMongoDB;
+import databases.ConnectToSqlDB;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PrimeNumber {
 
@@ -12,6 +16,24 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
+
+//		ConnectToSqlDB sql = new ConnectToSqlDB();
+//		sql.insertDataFromArrayListToSqlTable(list, "PrimeNumber", "Numbers");
+//		sql.readDataBase("PrimeNumber", "Numbers");
+//		ConnectToMongoDB connectToMongoDB = new ConnectToMongoDB();
+//		connectToMongoDB.insertIntoMongoDB(list,"PrimeNumbers");
+//		connectToMongoDB.readStudentListFromMongoDB("PrimeNumbers");
+		List<Integer> arrayprime = new ArrayList<>();
+		for (int i = 2; i <= 1000000; i++) {
+			for (int j = 2; j <= i; j++) {
+				if (j == i) {
+					System.out.println(i);
+				}
+				if (i % j == 0)
+					break;
+			}
+		}
+		List list = arrayprime;
 
 	}
 
