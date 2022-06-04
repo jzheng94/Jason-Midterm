@@ -1,5 +1,6 @@
 package math.problems;
 
+
 public class Pattern {
 
 	public static void main(String[] args) {
@@ -7,8 +8,21 @@ public class Pattern {
 		 * 100,99,98,97,96,95,94,93,92,91,90,88,86,84,82,80,78,76,74,72,70,67,64,61,58,55,52,49,46,43,40,36,32............
 		 *
 		 */
-		
+		int[] array = new int[40];
+		int pattern = 1, a = 0;
+		int number = 100;
 
+		while (number > 0) {
+			for (int i = 0; i < 10; i++) {
+				System.out.print(" " + number);
+				array[a] = number;
+				number -= pattern;
+				a++;
+
+			}
+			pattern++;
+		}
+		System.out.println(" ");
 
 	}
 }
