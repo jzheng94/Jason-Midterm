@@ -14,7 +14,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JsonReaderUtil {
+public class    JsonReaderUtil {
 
     /*
       ToDo:API is given, This Rest API will give you a Json Array. It is parsed partially. Your task is to give the following output.

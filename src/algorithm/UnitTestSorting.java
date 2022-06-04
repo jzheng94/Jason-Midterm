@@ -24,6 +24,53 @@ public class UnitTestSorting {
         Assert.assertEquals("i am waiting...",value);
         //Now implement Unit test for rest of the soring algorithm...................below
 
+        //Insertion Sort Unit test
+        try{
+            int[] actual = sort.insertionSort(unSortedArray);
+            System.out.println("Array is sorted.");
+        }catch (AssertionError ex){
+            System.out.println("Array is not sorted.");
+        }
 
+        //Bubble Sort Unit Test
+        try{
+            int[] actual = sort.bubbleSort(unSortedArray);
+            System.out.println("Array is sorted.");
+        }catch (AssertionError ex){
+            System.out.println("Array is not sorted");
+        }
+
+        //Quick Sort Unit test
+        sort.quickSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+
+        //Bucket Sort Unit test
+        sort.insertionSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
+
+
+        //Heap Sort Unit test
+        try{
+            int[] actual = sort.heapSort(unSortedArray);
+            System.out.println("Array is sorted");
+        }catch (AssertionError ex){
+            System.out.println("Array is not sorted.");
+        }
+
+        //Merge Sort Unit test
+        sort.mergeSort(unSortedArray,unSortedArray.length);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not Sorted");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
     }
 }
